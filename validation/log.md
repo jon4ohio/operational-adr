@@ -11,7 +11,9 @@ Documents adoption attempts against [spec/adr-v1.0.md](../spec/adr-v1.0.md). v1.
 
 **v1.0 shipped** (2026-07-10). Repository published with unified project statement in [README.md](../README.md).
 
-Attempt 2 (external adopter) remains open for post-publish feedback. Report adoption or friction via issues; entries will be logged here.
+**Specification independence:** Adopters need only this repository and [spec/adr-v1.0.md](../spec/adr-v1.0.md)—not portfolio or Anchor access. Origin repositories explain provenance; they are not adoption prerequisites.
+
+Report adoption or friction via issues; entries will be logged here.
 
 ---
 
@@ -66,10 +68,40 @@ Attempt 2 (external adopter) remains open for post-publish feedback. Report adop
 
 ---
 
-## Attempt 2 — External adopter
+## Attempt 2 — Anchor (one adopter among many)
+
+**Adopter:** Anchor meta-repo (https://github.com/jon4ohio/anchor)  
+**Corpus access:** Maintainer; Anchor was secondary extraction corpus during capture—shared history, **not required for other adopters**  
+**Date:** 2026-07-10
+
+### Integration approach
+
+- Anchor ADR contract unchanged (minimal)
+- Evidence-First ADR listed as compatible format (not absorbed)
+- [ADR-004](https://github.com/jon4ohio/anchor/blob/main/docs/decisions/ADR-004-evidence-first-adr-compatible-format.md): future framework ADRs **MAY** use EFA v1.0 as **preferred** rich format—not mandatory
+- ADR-004 written in Evidence-First ADR Tier 1 (first Anchor use of format)
+- Spec linked at `v1.0.0` tag; not copied into Anchor
+
+### Policy note
+
+Adoption is permissive (MAY/preferred) by design. Strengthening to SHOULD/mandatory deferred until sustained natural use produces evidence (~6 months or three new framework ADRs).
+
+### Friction observed
+
+| Friction | Severity | Resolution |
+|----------|----------|------------|
+| (none yet) | — | Observe during next framework ADRs |
+
+### Outcome
+
+**In progress.** Anchor is one adopter—listed alongside future Project A/B/C style adopters, not as a required step in a universal lifecycle. Format friction routes to this repo's issues; framework friction stays in Anchor evidence.md.
+
+---
+
+## Attempt 3 — External adopter (non-Anchor)
 
 **Status:** Not yet attempted  
-**Trigger:** First external user reports adoption or friction
+**Trigger:** First external user outside Anchor/portfolio reports adoption or friction
 
 ---
 
@@ -87,6 +119,8 @@ See [analysis/comparison-v1.0.md](../analysis/comparison-v1.0.md) — descriptiv
 | Spec derived from model | Yes |
 | Reference implementation | Yes (3 ADRs, index, LOG) |
 | Adoption without source repos | Yes (self-adoption blind to corpus) |
-| External adopter | Pending |
+| External adopter (non-Anchor) | Pending |
+| Specification independent of origin | Yes (v1.0 publish milestone) |
+| Anchor adopter (one among many) | In progress (MAY/preferred policy) |
 
 **v1.0 packaging complete.** External validation remains open for promotion claims.

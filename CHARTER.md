@@ -4,29 +4,47 @@ Canonical public statement: [README.md](README.md)
 
 ## Purpose
 
-Evidence-First ADR packages a mature architectural decision record practice—refined through long-term use across multiple software projects—into an explicit model, specification, and reference implementation.
+Evidence-First ADR packages a mature architectural decision record practice—observed across related projects during development—into an explicit model, specification, and reference implementation.
 
 The goal is not to invent a governance theory. The goal is to capture a practice that already works and make it adoptable without access to the source repositories.
+
+> Evidence-First ADR was extracted from ADR practices that evolved across multiple related projects during its development. Those projects explain the specification's provenance, but they are not prerequisites for adoption. Once published, Evidence-First ADR stands as an independent specification that any project can evaluate and adopt.
 
 ## Three distinct things
 
 | Term | Meaning |
 |------|---------|
-| **The practice** | What has been done for years (portfolio, Anchor)—tacit, lived |
+| **The practice** | What was observed across related projects—tacit, lived (provenance in `discovery/`) |
 | **The model** | Explanation of that practice—portable, explicit |
 | **The specification** | How to implement the model (markdown, index, file layout) |
 
-## Influences
+## Influences and provenance
 
-Lineage, not competition:
+**Acknowledged influences** (lineage, not competition):
 
 - Nygard ADRs
 - MADR
 - Future Friendly Decision concepts
-- jon-ohio-portfolio practice (primary corpus)
-- Anchor refinements (secondary corpus)
 
-Phase 1 extraction provenance covers portfolio and Anchor only. See [model/traceability.md](model/traceability.md). Other influences are acknowledged in narrative and [analysis/comparison-v1.0.md](analysis/comparison-v1.0.md).
+**Extraction provenance** (Phase 1 capture only):
+
+- jon-ohio-portfolio (primary corpus)
+- Anchor (secondary corpus)
+
+See [model/traceability.md](model/traceability.md) and [discovery/](discovery/). Influences and narrative context: [analysis/comparison-v1.0.md](analysis/comparison-v1.0.md).
+
+Portfolio and Anchor explain **why** v1.0 looks like this. They are not adoption prerequisites.
+
+## Independence
+
+**v1.0 shipped** (2026-07-10). The specification is independent of its origin repositories.
+
+| Role | Portfolio / Anchor |
+|------|-------------------|
+| **Historically** | Extraction sources during productization |
+| **Going forward** | Anchor is one adopter among many ([validation/log.md](validation/log.md) Attempt 2); portfolio provenance job for v1.0 is complete |
+
+Origin repos are not dependencies. Adopters need only this repository and [spec/adr-v1.0.md](spec/adr-v1.0.md).
 
 ## Methodology
 
@@ -44,11 +62,13 @@ Evidence-First ADR evolves through demonstrated practice and adopter feedback.
 
 Every normative change to the practice model or specification should be traceable to one of three sources:
 
-- established practice,
+- validated adopter evidence (primary driver post-v1.0),
 - observed adopter behaviour,
 - documented shortcomings in the current specification.
 
 Design preference alone is not sufficient justification for changing the specification.
+
+Post-v1.0: changes are **not** justified by "the portfolio evolved, therefore the spec changes." Practices worth proposing must be validated like any other change.
 
 ## Scope
 
@@ -62,10 +82,11 @@ Design preference alone is not sufficient justification for changing the specifi
 **The project does not own:**
 
 - Anchor
+- jon-ohio-portfolio
 - any specific software development methodology
 - any particular repository structure
 
-jon-ohio-portfolio and Anchor are sources of captured practice, not defining authorities.
+jon-ohio-portfolio and Anchor are provenance sources from Phase 1 capture—not defining authorities for adopters.
 
 ## Success
 
@@ -73,9 +94,9 @@ Others can adopt the practice without the author's private repositories. Broader
 
 ## Current phase
 
-**v1.0 shipped** (2026-07-10). Capture, model, spec, and reference implementation complete.
+**v1.0 shipped** (2026-07-10). Capture, model, spec, and reference implementation complete. Specification independence milestone reached.
 
-Validation ongoing: external adopter feedback tracked in [validation/log.md](validation/log.md).
+Validation ongoing: adopter feedback tracked in [validation/log.md](validation/log.md).
 
 ## v1.1 gate
 
@@ -85,6 +106,6 @@ Version 1.1 opens when evidence arrives from:
 - migration experiences (Nygard, MADR, custom templates),
 - documented friction or shortcomings in the current specification.
 
-Not from feature ideas alone.
+Not from feature ideas alone. Not from origin repository changes alone.
 
-The model and spec change only if capture evidence, adopter behaviour, or documented shortcomings contradict them.
+The model and spec change only if validated adopter evidence, adopter behaviour, or documented shortcomings contradict them.

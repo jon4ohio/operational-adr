@@ -4,7 +4,9 @@
 
 **Evidence-First ADR is a portable Architectural Decision Record practice.**
 
-It captures an ADR practice that evolved during the development of substantial software projects, influenced by established approaches such as Nygard ADRs, MADR, and Future Friendly Decision concepts, and refined through practical use across the jon-ohio-portfolio and Anchor projects.
+It was extracted from ADR practices that evolved across multiple related projects during its development, influenced by established approaches such as Nygard ADRs, MADR, and Future Friendly Decision concepts. Provenance is documented in [`discovery/`](discovery/).
+
+**Those origin projects explain why the specification looks the way it does—but they are not prerequisites for adoption.** Once published, Evidence-First ADR stands as an independent specification that any project can evaluate and adopt.
 
 The project does not attempt to replace existing ADR approaches or introduce a universal decision governance framework.
 
@@ -29,6 +31,8 @@ It existed as:
 - and accumulated experience.
 
 Evidence-First ADR exists to capture that practice before it remains only tacit knowledge.
+
+Origin capture is complete. **Adopters start at [spec/adr-v1.0.md](spec/adr-v1.0.md)**—not at the portfolio or Anchor repositories.
 
 ---
 
@@ -60,6 +64,44 @@ The capture work is complete.
 The specification is derived from observed practice rather than invented independently. See [model/traceability.md](model/traceability.md) for provenance.
 
 **Evidence-first** names this derivation methodology—not a requirement that every ADR embed all evidence inline. Evidence often lives in PRs, logs, experiments, and indexes; the ADR references it.
+
+---
+
+## Origin and adoption
+
+Two stories apply to different audiences. Do not confuse them.
+
+### Origin (historical — author and researchers)
+
+How this project was built. Portfolio and Anchor are relatable here because the same maintainer evolved practice across both—they are **provenance**, not adoption prerequisites.
+
+```text
+Existing practice
+(across related projects during development)
+        │
+        ▼
+Capture (discovery/)
+        │
+        ▼
+Evidence-First ADR v1.0
+```
+
+### Adoption (everyone else)
+
+How to use the published specification. Anchor is **one adopter among many**—it shares history with the project but that history is not required for anyone else.
+
+```text
+Evidence-First ADR
+        │
+        ├── Project A
+        ├── Project B
+        ├── Project C
+        └── Anchor (one adopter)
+```
+
+### Independence milestone
+
+v1.0 publish means the **specification is independent of its origin**. The portfolio's role as provenance source for v1.0 is complete. Future spec changes are not justified by "the portfolio evolved, therefore the spec changes"—they require validated proposals from adopters, like any other project.
 
 ---
 
@@ -106,7 +148,7 @@ Each layer has a distinct responsibility.
 
 | Layer | Responsibility |
 |-------|----------------|
-| **Discovery** | Explains where the practice came from |
+| **Discovery** | Provenance archive—why v1.0 looks like this (not required for adoption) |
 | **Model** | Explains the practice |
 | **Specification** | Explains how to implement it |
 | **Reference implementation** | Demonstrates it |
@@ -120,15 +162,17 @@ Governance detail: [CHARTER.md](CHARTER.md)
 
 The value of the project is not that it invents new ADR concepts.
 
-Most ideas have clear lineage:
+**Influences** (ideas the practice draws on):
 
 - Nygard
 - MADR
 - Future Friendly Decision
-- long-term portfolio practice
-- refinements explored through Anchor
 
-The contribution is bringing those influences together into one coherent, documented practice.
+**Provenance** (extraction corpus—why the v1.0 spec looks like this):
+
+- jon-ohio-portfolio and Anchor — documented in [`discovery/`](discovery/), not an adoption path
+
+The contribution is bringing influences and observed practice together into one coherent, documented specification.
 
 More importantly, every significant part of the specification can be traced back to observed practice.
 
@@ -150,11 +194,13 @@ Evidence-First ADR evolves through demonstrated practice and adopter feedback.
 
 Every normative change to the practice model or specification should be traceable to one of three sources:
 
-- established practice,
+- validated adopter evidence (primary driver post-v1.0),
 - observed adopter behaviour,
 - documented shortcomings in the current specification.
 
 Design preference alone is not sufficient justification for changing the specification.
+
+Post-v1.0 changes are **not** justified by "the portfolio evolved, therefore the spec changes." A practice worth proposing must be validated like any other change—from adopters, migration friction, or documented spec gaps.
 
 Full governance: [CHARTER.md](CHARTER.md)
 
@@ -226,7 +272,7 @@ Instead, it should continue the same philosophy that produced Version 1.0:
 | [model/adr-practice-model-v1.0.md](model/adr-practice-model-v1.0.md) | Explanation of the practice |
 | [spec/adr-v1.0.md](spec/adr-v1.0.md) | Markdown serialization of the model |
 | [decisions/](decisions/) | Reference implementation |
-| [discovery/](discovery/) | Phase 1 capture (research appendix) |
+| [discovery/](discovery/) | Provenance archive (research—not required for adoption) |
 | [validation/log.md](validation/log.md) | Adoption evidence |
 | [analysis/comparison-v1.0.md](analysis/comparison-v1.0.md) | Peer comparison (Nygard, MADR) |
 

@@ -7,19 +7,26 @@ Descriptive comparison of Evidence-First ADR with common ADR formats. **Not norm
 
 ---
 
-## Influences and lineage
+## Influences
 
-Evidence-First ADR does not claim to invent architectural decision records. It packages a practice with acknowledged influences:
+Evidence-First ADR does not claim to invent architectural decision records. Acknowledged **influences** (ideas):
 
 | Influence | Role |
 |-----------|------|
 | **Nygard ADRs** | Foundational pattern (Context, Decision, Status, Consequences) |
 | **MADR** | Community markdown template; minimal/full modes |
-| **Future Friendly Decision** | Conceptual influence on decision durability and review (acknowledged; not part of Phase 1 extraction corpus) |
+| **Future Friendly Decision** | Conceptual influence on decision durability and review (not part of Phase 1 extraction corpus) |
+
+## Extraction provenance
+
+**Provenance** (Phase 1 capture only—why v1.0 looks like this; not adoption prerequisites):
+
+| Source | Role |
+|--------|------|
 | **jon-ohio-portfolio** | Primary extraction corpus (80+ ADRs, index, LOG, typed relationships) |
 | **Anchor** | Secondary extraction corpus (lean contract, ecosystem patterns) |
 
-Phase 1 provenance in [model/traceability.md](../model/traceability.md) maps only portfolio and Anchor extractions. Nygard, MADR, and Future Friendly Decision appear here as lineage—not as extracted evidence.
+Portfolio and Anchor are not ecosystem members for adopters. They document origin. See [discovery/](../discovery/) and [model/traceability.md](../model/traceability.md). Going forward, Anchor is one adopter among many.
 
 ---
 
@@ -27,7 +34,7 @@ Phase 1 provenance in [model/traceability.md](../model/traceability.md) maps onl
 
 | Aspect | Nygard (classic) | MADR | Evidence-First ADR v1.0 |
 |--------|------------------|------|------------------------|
-| Origin | Written as pattern | Written as template | Extracted from lived practice (portfolio + Anchor) |
+| Origin | Written as pattern | Written as template | Extracted from lived practice; provenance in [traceability.md](../model/traceability.md)—adopters need not access source repos |
 | Provenance | Author intent | Community template | [traceability.md](../model/traceability.md) maps 16 extractions |
 | Core sections | Title, Context, Decision, Status, Consequences | Configurable; often Context, Decision, Consequences | Tier 0: same core; Tier 1: drivers, options, risks, review |
 | Alternatives | Optional | Encouraged | Required when alternatives exist (observed in all corpus ADRs) |
