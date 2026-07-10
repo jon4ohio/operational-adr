@@ -1,12 +1,24 @@
-# Evidence-First ADR
+# Operational ADR
+
+A compatible ADR implementation distilled from long-term **operational** practice. It remains compatible with established ADR approaches (Nygard, MADR) while adding optional capabilities that have proven useful in managing architectural decisions over time.
+
+**Operational ADR was originally published as Evidence-First ADR.** The rename reflects a clarification of identity: "evidence-first" describes the methodology used to derive the implementation, not the purpose of the implementation itself.
+
+**Maintainer recommendation** — not a claim of universal superiority.
+
+**Methodology note:** This specification was derived from observed practice (evidence-first productization). That describes how it was built, not what an ADR is for. ADRs record significant project decisions.
+
+Tag `v1.0.0` was published under the former name; the content is the same practice.
+
+---
 
 ## What it is
 
-**Evidence-First ADR is a portable Architectural Decision Record practice.**
+**Operational ADR is a portable Architectural Decision Record practice.**
 
 It was extracted from ADR practices that evolved across multiple related projects during its development, influenced by established approaches such as Nygard ADRs, MADR, and Future Friendly Decision concepts. Provenance is documented in [`discovery/`](discovery/).
 
-**Those origin projects explain why the specification looks the way it does—but they are not prerequisites for adoption.** Once published, Evidence-First ADR stands as an independent specification that any project can evaluate and adopt.
+**Those origin projects explain why the specification looks the way it does—but they are not prerequisites for adoption.** Once published, Operational ADR stands as an independent specification that any project can evaluate and adopt.
 
 The project does not attempt to replace existing ADR approaches or introduce a universal decision governance framework.
 
@@ -30,7 +42,7 @@ It existed as:
 - supporting artifacts,
 - and accumulated experience.
 
-Evidence-First ADR exists to capture that practice before it remains only tacit knowledge.
+Operational ADR exists to capture that practice before it remains only tacit knowledge.
 
 Origin capture is complete. **Adopters start at [spec/adr-v1.0.md](spec/adr-v1.0.md)**—not at the portfolio or Anchor repositories.
 
@@ -38,7 +50,7 @@ Origin capture is complete. **Adopters start at [spec/adr-v1.0.md](spec/adr-v1.0
 
 ## How it was created
 
-Unlike many specifications that begin from design discussions or first principles, Evidence-First ADR was built by productizing an existing practice.
+Unlike many specifications that begin from design discussions or first principles, Operational ADR was built by productizing an existing practice.
 
 ```text
 Existing ADR Practice
@@ -83,7 +95,8 @@ Existing practice
 Capture (discovery/)
         │
         ▼
-Evidence-First ADR v1.0
+Operational ADR v1.0
+(published as Evidence-First ADR)
 ```
 
 ### Adoption (everyone else)
@@ -91,7 +104,7 @@ Evidence-First ADR v1.0
 How to use the published specification. Anchor is **one adopter among many**—it shares history with the project but that history is not required for anyone else.
 
 ```text
-Evidence-First ADR
+Operational ADR
         │
         ├── Project A
         ├── Project B
@@ -190,7 +203,7 @@ Peer comparison: [analysis/comparison-v1.0.md](analysis/comparison-v1.0.md)
 
 ## Evolution principle
 
-Evidence-First ADR evolves through demonstrated practice and adopter feedback.
+Operational ADR evolves through demonstrated practice and adopter feedback.
 
 Every normative change to the practice model or specification should be traceable to one of three sources:
 
@@ -208,7 +221,7 @@ Full governance: [CHARTER.md](CHARTER.md)
 
 ## Version 1.0
 
-Version 1.0 represents the successful productization of an existing ADR practice.
+Version 1.0 represents the successful productization of an existing ADR practice. **Operational ADR v1.0 is stable** — use it, recommend it, observe it. Do not treat this rename as the start of feature work.
 
 It includes:
 

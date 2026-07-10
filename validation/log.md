@@ -11,6 +11,8 @@ Documents adoption attempts against [spec/adr-v1.0.md](../spec/adr-v1.0.md). v1.
 
 **v1.0 shipped** (2026-07-10). Repository published with unified project statement in [README.md](../README.md).
 
+**Renamed to Operational ADR** (formerly Evidence-First ADR). Product identity clarified; methodology remains evidence-first derivation. Tag `v1.0.0` predates the rename.
+
 **Specification independence:** Adopters need only this repository and [spec/adr-v1.0.md](../spec/adr-v1.0.md)—not portfolio or Anchor access. Origin repositories explain provenance; they are not adoption prerequisites.
 
 Report adoption or friction via issues; entries will be logged here.
@@ -77,9 +79,9 @@ Report adoption or friction via issues; entries will be logged here.
 ### Integration approach
 
 - Anchor ADR contract unchanged (minimal)
-- Evidence-First ADR listed as compatible format (not absorbed)
-- [ADR-004](https://github.com/jon4ohio/anchor/blob/main/docs/decisions/ADR-004-evidence-first-adr-compatible-format.md): future framework ADRs **MAY** use EFA v1.0 as **preferred** rich format—not mandatory
-- ADR-004 written in Evidence-First ADR Tier 1 (first Anchor use of format)
+- Operational ADR listed as compatible format (not absorbed)
+- [ADR-004](https://github.com/jon4ohio/anchor/blob/main/docs/decisions/ADR-004-operational-adr-compatible-format.md): future framework ADRs **MAY** use EFA v1.0 as **preferred** rich format—not mandatory
+- ADR-004 written in Operational ADR Tier 1 (first Anchor use of format)
 - Spec linked at `v1.0.0` tag; not copied into Anchor
 
 ### Policy note

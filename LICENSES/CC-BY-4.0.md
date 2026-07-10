@@ -31,7 +31,6 @@ https://creativecommons.org/licenses/by/4.0/legalcode
 
 ## Suggested attribution
 
-> Evidence-First ADR (2026). Licensed under CC BY 4.0.
-> https://github.com/[your-org]/evidence-first-adr
+> Operational ADR (2026). Licensed under CC BY 4.0.
+> https://github.com/jon4ohio/operational-adr
 
-Replace the URL with the published repository location.

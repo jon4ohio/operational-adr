@@ -10,7 +10,7 @@ As of v1.0, this repository contains documentation only. This license applies wh
 
 ## License text
 
-Copyright (c) 2026 Evidence-First ADR contributors
+Copyright (c) 2026 Operational ADR contributors
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

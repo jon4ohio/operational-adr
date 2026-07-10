@@ -10,7 +10,7 @@
 
 This repository documents and packages an ADR practice. It must practice what it specifies: durable records when decisions constrain future work. Without a recording threshold, model/spec choices would live only in chat or CHARTER prose.
 
-**In scope:** When to add ADRs under `decisions/` in evidence-first-adr.  
+**In scope:** When to add ADRs under `decisions/` in operational-adr.  
 **Out of scope:** Adopter projects' thresholds (they choose ADR or policy per spec §5).
 
 ## Decision Drivers

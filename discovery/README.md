@@ -11,7 +11,7 @@ Portfolio and Anchor are relatable as corpus sources because the same maintainer
 | Corpus | Path | Role |
 |--------|------|------|
 | jon-ohio-portfolio | `../../Portfolio/jon-ohio-portfolio/` | Primary extraction source (80+ ADRs, index, LOG) |
-| Anchor meta-repo | `../../agentic workflow/` | Secondary extraction source (lean contract, ecosystem patterns) |
+| Anchor meta-repo | `../../anchor/` | Secondary extraction source (lean contract, ecosystem patterns) |
 
 These repositories are **provenance**, not ecosystem members or adoption prerequisites.
 

@@ -82,3 +82,4 @@ Evidence for this decision lives in `discovery/` (extractions + synthesis), not 
 - [CHARTER.md](../CHARTER.md)
 - [discovery/synthesis/governance-primitives.md](../discovery/synthesis/governance-primitives.md)
 - [model/traceability.md](../model/traceability.md)
+- Product identity: published as Operational ADR (formerly Evidence-First ADR); this ADR records derivation methodology only

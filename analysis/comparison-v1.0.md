@@ -3,13 +3,13 @@
 **Status:** Optional validation artifact  
 **Date:** 2026-07-10
 
-Descriptive comparison of Evidence-First ADR with common ADR formats. **Not normative** — does not reshape capture, model, or spec.
+Descriptive comparison of Operational ADR (formerly published as Evidence-First ADR) with common ADR formats. **Not normative** — does not reshape capture, model, or spec.
 
 ---
 
 ## Influences
 
-Evidence-First ADR does not claim to invent architectural decision records. Acknowledged **influences** (ideas):
+Operational ADR does not claim to invent architectural decision records. Acknowledged **influences** (ideas):
 
 | Influence | Role |
 |-----------|------|
@@ -32,7 +32,7 @@ Portfolio and Anchor are not ecosystem members for adopters. They document origi
 
 ## Comparison matrix
 
-| Aspect | Nygard (classic) | MADR | Evidence-First ADR v1.0 |
+| Aspect | Nygard (classic) | MADR | Operational ADR v1.0 |
 |--------|------------------|------|------------------------|
 | Origin | Written as pattern | Written as template | Extracted from lived practice; provenance in [traceability.md](../model/traceability.md)—adopters need not access source repos |
 | Provenance | Author intent | Community template | [traceability.md](../model/traceability.md) maps 16 extractions |
@@ -47,7 +47,7 @@ Portfolio and Anchor are not ecosystem members for adopters. They document origi
 
 ---
 
-## What Evidence-First ADR adds (from practice, not invention)
+## What Operational ADR adds (from practice, not invention)
 
 1. **Traceability chain** — extractions → model elements → spec sections
 2. **Tier system** — Tier 0 (Anchor lean) through Tier 2 (infrastructure extensions)
@@ -57,7 +57,7 @@ Portfolio and Anchor are not ecosystem members for adopters. They document origi
 
 ---
 
-## What Evidence-First ADR does not claim
+## What Operational ADR does not claim
 
 - Superiority over Nygard or MADR for all projects
 - Universal governance framework
@@ -70,8 +70,8 @@ Portfolio and Anchor are not ecosystem members for adopters. They document origi
 
 | If you already use… | Consider… |
 |--------------------|-----------|
-| Nygard minimal | Evidence-First Tier 0 — similar shape, adds supersession + optional tiers |
-| MADR | Evidence-First Tier 1 — comparable richness; add traceability mindset if packaging practice |
+| Nygard minimal | Operational ADR Tier 0 — similar shape, adds supersession + optional tiers |
+| MADR | Operational ADR Tier 1 — comparable richness; add traceability mindset if packaging practice |
 | No ADRs | Start Tier 0; add index at 10+ ADRs per spec §6 |
 
 ---

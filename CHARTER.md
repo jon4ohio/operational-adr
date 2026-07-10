@@ -4,11 +4,13 @@ Canonical public statement: [README.md](README.md)
 
 ## Purpose
 
-Evidence-First ADR packages a mature architectural decision record practice—observed across related projects during development—into an explicit model, specification, and reference implementation.
+Operational ADR packages a mature architectural decision record practice—observed across related projects during development—into an explicit model, specification, and reference implementation.
 
 The goal is not to invent a governance theory. The goal is to capture a practice that already works and make it adoptable without access to the source repositories.
 
-> Evidence-First ADR was extracted from ADR practices that evolved across multiple related projects during its development. Those projects explain the specification's provenance, but they are not prerequisites for adoption. Once published, Evidence-First ADR stands as an independent specification that any project can evaluate and adopt.
+> Operational ADR was extracted from ADR practices that evolved across multiple related projects during its development. Those projects explain the specification's provenance, but they are not prerequisites for adoption. Once published, Operational ADR stands as an independent specification that any project can evaluate and adopt.
+
+**Formerly published as Evidence-First ADR.** "Evidence-first" names the derivation methodology, not the product.
 
 ## Three distinct things
 
@@ -37,7 +39,7 @@ Portfolio and Anchor explain **why** v1.0 looks like this. They are not adoption
 
 ## Independence
 
-**v1.0 shipped** (2026-07-10). The specification is independent of its origin repositories.
+**v1.0 shipped** (2026-07-10). The specification is independent of its origin repositories. **Operational ADR v1.0 is stable.**
 
 | Role | Portfolio / Anchor |
 |------|-------------------|
@@ -58,7 +60,7 @@ Origin repos are not dependencies. Adopters need only this repository and [spec/
 
 ## Evolution principle
 
-Evidence-First ADR evolves through demonstrated practice and adopter feedback.
+Operational ADR evolves through demonstrated practice and adopter feedback.
 
 Every normative change to the practice model or specification should be traceable to one of three sources:
 
@@ -94,9 +96,9 @@ Others can adopt the practice without the author's private repositories. Broader
 
 ## Current phase
 
-**v1.0 shipped** (2026-07-10). Capture, model, spec, and reference implementation complete. Specification independence milestone reached.
+**Operational ADR v1.0 stable** (shipped 2026-07-10; renamed from Evidence-First ADR). Capture, model, spec, and reference implementation complete.
 
-Validation ongoing: adopter feedback tracked in [validation/log.md](validation/log.md).
+Validation ongoing: adopter feedback tracked in [validation/log.md](validation/log.md). Resist feature work until adoption evidence warrants it.
 
 ## v1.1 gate
 
